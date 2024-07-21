@@ -1,0 +1,74 @@
+<header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="/">shopping cart</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Products<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href='/cart'>Cart<span class="badge badge-success" id="cart-count">{{cartCount}}</span></a>
+      </li>
+      {{#if user}}
+      <li class="nav-item">
+        <a class="nav-link" href="/orders">Orders</a>
+      </li>
+      {{/if}}
+  
+    
+    </ul>
+  <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{#if user}}
+        {{user.Name}}
+    {{else}}
+        Account
+    {{/if}}
+    
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    {{#if user}}
+        <a class="dropdown-item" href="/logout">Logout</a>
+    {{else}}
+         <a class="dropdown-item" href="/login">Login</a>
+         
+    {{/if}}
+    
+  
+
+  </div>
+</div>
+  </div>
+</nav>
+    </header>
+ 
+
+
+<body>
+  <div style="background-color:#F3F0EC; padding: 30px;">
+    {{!-- <a href="/">
+       <img src="public/images/lovella%20logo.jpg" alt="Cafe Lovella Logo" />
+    </a> --}}
+    <h1 style="color:#f7c806;font-family: 'Brush Script MT', cursive;  font-size: 300% ;text-align: center; ">Lovella</h1>
+    <h4 style="color:#000000; font-family: 'Lobster', cursive; text-align: center;">cafe</h4>
+  </div>
+</body>
+
+{{!-- font-family: 'Brush Script MT' --}}
+
+{{!-- <footer style="position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            background: rgb(245, 247, 245);
+            color: rgb(19, 4, 4);">
+  <div class="container">
+    <h3>@lovellacafe</h3>
+    <h4>Email Id : libinantony214@gmail.com</h4>
+    <h4>Contact: +965 557 95623</h4>
+  </div>
+</footer> --}}

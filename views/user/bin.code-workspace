@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "../../bin"
+		},
+		{
+			"path": "../../config"
+		},
+		{
+			"path": "../../helpers"
+		},
+		{
+			"path": "../../node_modules"
+		},
+		{
+			"path": "../../public"
+		},
+		{
+			"path": "../../routes"
+		},
+		{
+			"path": "../../user"
+		},
+		{
+			"path": ".."
+		}
+	]
+}

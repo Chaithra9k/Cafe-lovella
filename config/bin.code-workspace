@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../bin"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../helpers"
+		},
+		{
+			"path": "../node_modules"
+		},
+		{
+			"path": "../public"
+		},
+		{
+			"path": "../routes"
+		},
+		{
+			"path": "../views"
+		}
+	]
+}
